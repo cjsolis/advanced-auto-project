@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1597697801026' stop='1597697808040'>
+    <name>Search Bar</name>
+    <title>Search Bar</title>
+    <test-cases>
+        <test-case start='1597697801028' status='broken' stop='1597697808039'>
+            <name>Search a flight and get a valid URL, available number of flights and a correct depart and destination points</name>
+            <title>Search a flight and get a valid URL, available number of flights and a correct depart and destination points</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1597697801047' status='passed' stop='1597697805866'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='16a79061-fd55-41f1-8e2b-9a8570ea075c-attachment.json' type='application/json' size='46'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597697805868' status='passed' stop='1597697805903'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d251b466-89a8-4e07-ab94-b03489ef9034-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='76c591f1-82ce-48ff-87fe-3763d7a0f855-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597697805908' status='passed' stop='1597697806143'>
+                    <name>POST /session/:sessionId/element/41cac7d9-8e10-41be-866b-e34b3f8f0a90/click</name>
+                    <title>POST /session/:sessionId/element/41cac7d9-8e10-41be-866b-e34b3f8f0a90/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1597697806144' status='passed' stop='1597697806274'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='91aa2de9-08fc-45b9-bf72-67c90dc1450a-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='34bad359-f281-4077-b09b-2e9c278148af-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597697806276' status='broken' stop='1597697808039'>
+                    <name>POST /session/:sessionId/element/c7874262-e86f-42d1-b1e7-d360af878ee5/clear</name>
+                    <title>POST /session/:sessionId/element/c7874262-e86f-42d1-b1e7-d360af878ee5/clear</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1597697806450' status='passed' stop='1597697808038'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='b6ab4689-0b8f-4ab1-a1fe-3eeaaedb6bcc-attachment.png' type='image/png' size='1787189'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid element state
+                  (Session info: chrome=84.0.4147.125)</message>
+                <stack-trace>invalid element state
+                  (Session info: chrome=84.0.4147.125)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at HomePage.search (/Users/qa/Workspace/AutoQA/advanced-auto-project/test/pageobjects/home.page.js:12:24)
+                    at Context.&lt;anonymous> (/Users/qa/Workspace/AutoQA/advanced-auto-project/test/specs/searchbar.e2e.js:7:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@id=\"flights\"]//button[contains(text(), \"Search\")]"
+}

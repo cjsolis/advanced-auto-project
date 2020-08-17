@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1597697261270' stop='1597697272010'>
+    <name>Search Bar</name>
+    <title>Search Bar</title>
+    <test-cases>
+        <test-case start='1597697261270' status='broken' stop='1597697272009'>
+            <name>Search a flight and get a valid URL, available number of flights and a correct depart and destination points</name>
+            <title>Search a flight and get a valid URL, available number of flights and a correct depart and destination points</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1597697261274' status='passed' stop='1597697265572'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='45baf60e-5c38-44f8-847c-0f216aa80579-attachment.json' type='application/json' size='46'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597697265573' status='passed' stop='1597697265664'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='bfb62be7-ac3b-4e7a-926a-44f1bfb5f759-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='3c6a8bcd-b40b-4592-a1e2-5866674e8a86-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597697265670' status='passed' stop='1597697265835'>
+                    <name>POST /session/:sessionId/element/1b7c462b-69a5-403f-909d-b3ede6aeb206/click</name>
+                    <title>POST /session/:sessionId/element/1b7c462b-69a5-403f-909d-b3ede6aeb206/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1597697265836' status='passed' stop='1597697265944'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='dd22e8e2-a3bc-46d3-80b9-98cb045960d0-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='def94ec4-6763-4216-8672-6d8a876b8ffe-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597697265945' status='passed' stop='1597697266417'>
+                    <name>POST /session/:sessionId/element/f2b3ea3b-3cd9-43ba-8ca6-2db3e0525816/click</name>
+                    <title>POST /session/:sessionId/element/f2b3ea3b-3cd9-43ba-8ca6-2db3e0525816/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1597697266417' status='passed' stop='1597697266442'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6d31d4b0-7996-4d2d-91ff-f5aabf29a926-attachment.json' type='application/json' size='61'/>
+                        <attachment title='Response' source='3283e513-0607-49b0-ae0f-0104e96bb863-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597697266448' status='broken' stop='1597697272009'>
+                    <name>POST /session/:sessionId/element/c8192452-e820-42d0-b2e2-bf5fc2a8e048/click</name>
+                    <title>POST /session/:sessionId/element/c8192452-e820-42d0-b2e2-bf5fc2a8e048/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1597697270939' status='passed' stop='1597697272008'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='03c9cf98-e532-40c9-b571-bb680ad83dc6-attachment.png' type='image/png' size='1277976'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;div class="select2-container form-control" id="s2id_location_to" style="width: 100%;">...&lt;/div> is not clickable at point (355, 353). Other element would receive the click: &lt;div id="select2-drop-mask" class="select2-drop-mask" style="">&lt;/div>
+                  (Session info: chrome=84.0.4147.125)</message>
+                <stack-trace>element click intercepted: Element &lt;div class="select2-container form-control" id="s2id_location_to" style="width: 100%;">...&lt;/div> is not clickable at point (355, 353). Other element would receive the click: &lt;div id="select2-drop-mask" class="select2-drop-mask" style="">&lt;/div>
+                  (Session info: chrome=84.0.4147.125)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at HomePage.search (/Users/qa/Workspace/AutoQA/advanced-auto-project/test/pageobjects/home.page.js:28:22)
+                    at Context.&lt;anonymous> (/Users/qa/Workspace/AutoQA/advanced-auto-project/test/specs/searchbar.e2e.js:7:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

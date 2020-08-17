@@ -1,0 +1,28 @@
+{
+  "name": "advanced-auto-project",
+  "version": "1.0.0",
+  "description": "Project for the Advanced Testing Automation Concepts course",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjsolis/advanced-auto-project.git"
+  },
+  "author": "Christopher Solis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjsolis/advanced-auto-project/issues"
+  },
+  "homepage": "https://github.com/cjsolis/advanced-auto-project#readme",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^6.3.6",
+    "@wdio/cli": "^6.4.0",
+    "@wdio/local-runner": "^6.4.0",
+    "@wdio/mocha-framework": "^6.4.0",
+    "@wdio/selenium-standalone-service": "^6.4.0",
+    "@wdio/spec-reporter": "^6.4.0",
+    "@wdio/sync": "^6.4.0"
+  }
+}

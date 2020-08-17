@@ -1,0 +1,74 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1597698035000' stop='1597698042386'>
+    <name>Search Bar</name>
+    <title>Search Bar</title>
+    <test-cases>
+        <test-case start='1597698035001' status='broken' stop='1597698042385'>
+            <name>Search a flight and get a valid URL, available number of flights and a correct depart and destination points</name>
+            <title>Search a flight and get a valid URL, available number of flights and a correct depart and destination points</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1597698035005' status='passed' stop='1597698040108'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b41d04e9-8ad9-4218-85f9-2fec263ae0d4-attachment.json' type='application/json' size='46'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597698040111' status='passed' stop='1597698040174'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f96cea4b-1b81-46d3-a979-efb81c58b01c-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='38bc79e5-85bb-4618-9f78-3814c9680762-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597698040181' status='passed' stop='1597698040386'>
+                    <name>POST /session/:sessionId/element/06cd4c4e-7722-4f12-9957-ccd96a9468f1/click</name>
+                    <title>POST /session/:sessionId/element/06cd4c4e-7722-4f12-9957-ccd96a9468f1/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1597698040387' status='passed' stop='1597698040509'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='5a0d3ec3-cc07-4f70-a3c0-5e3c4935bcc6-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='9acb51a2-9551-4e6e-8fde-6505e02d04cc-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1597698040510' status='passed' stop='1597698040991'>
+                    <name>POST /session/:sessionId/element/3b096634-b254-438b-8642-48fb5b444250/click</name>
+                    <title>POST /session/:sessionId/element/3b096634-b254-438b-8642-48fb5b444250/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1597698040992' status='passed' stop='1597698042384'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='074b20eb-d39b-4136-8f52-29caeb10fe44-attachment.png' type='image/png' size='1781108'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'setValue' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'setValue' of undefined
+                    at HomePage.search (/Users/qa/Workspace/AutoQA/advanced-auto-project/test/pageobjects/home.page.js:14:24)
+                    at Context.&lt;anonymous> (/Users/qa/Workspace/AutoQA/advanced-auto-project/test/specs/searchbar.e2e.js:7:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
