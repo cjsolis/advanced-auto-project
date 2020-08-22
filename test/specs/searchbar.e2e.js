@@ -1,18 +1,17 @@
 const HomePage = require('../pageobjects/home.page');
+const FlightPage = require('../pageobjects/flight.page');
 
 describe('Home page', () => {
-    it('should search a flight and get a valid URL, available number of flights and a correct depart and destination points', () => {
+    it('should search a flight and get a valid URL and available number of flights', () => {
+
         HomePage.open();
-
         HomePage.search();
-
+        
         let currentUrl = browser.getUrl();
-        console.log("Aaaaaaaaaaaaaaaaaaaaa" + HomePage.expectedUrl);
-        expect(HomePage.checkValidResultUrl()).to.be.true;
-        
-        
-        //SecurePage.flashAlert).toBeExisting();
-        //expect(SecurePage.flashAlert).toHaveTextContaining(
-        //    'You logged into a secure area!');
+        FlightPage.waitForResultsToLoad();
+
+        console.log(currentUrl); 
+        // Validar que la URL tenga algo
+        // Validar que hayan vuelos disponibles
     });
-});
+}); 
