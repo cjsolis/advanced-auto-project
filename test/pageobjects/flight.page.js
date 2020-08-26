@@ -4,7 +4,7 @@ class FlightPage extends Page {
 
     get loadingDiv() { return $('//div[contains(@class, "LoadingProvidersstyled__StyledLoadingProviders")]'); }
     get btnBook() { return $('[data-test="BookingButton"]'); }
-
+    
     selectTransportOnlyByName(transportName){
 
         $(`//div[@data-test="TransportOptionChoiceGroup"]//label[contains(., "${transportName}")]`).moveTo();
