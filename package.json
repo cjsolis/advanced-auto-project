@@ -24,6 +24,7 @@
     "@wdio/selenium-standalone-service": "^6.4.0",
     "@wdio/spec-reporter": "^6.4.0",
     "@wdio/sync": "^6.4.0",
+    "chai": "^4.2.0",
     "chromedriver": "^85.0.0"
   }
 }

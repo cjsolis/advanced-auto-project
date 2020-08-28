@@ -2,8 +2,10 @@ const Page = require('./page');
 
 class BookingPage extends Page {
 
-    // Passenger name //span[contains(text(), "Mr")]
-    // Passenger birthDay //span[contains(text(), "Mr")]/parent::*//time
+    get name() { return $('//div[contains(@class, "SummaryPassenger__BaseInfoWrapper")]//span[contains(@class, "Text__StyledText")]').getText(); } 
+    get id() { return $('//div[contains(@class, "SummaryPassenger__DocumentWrapper")]//p').getText(); }
+    get email() { return $('(//div[contains(@class, "SummaryPassengersContact__ItemWrapper")])[1]').getText(); }
+    get phone() { return $('(//div[contains(@class, "SummaryPassengersContact__ItemWrapper")])[2]').getText(); } 
 
     bookAFlight() {
 
