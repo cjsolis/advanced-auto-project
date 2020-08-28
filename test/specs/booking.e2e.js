@@ -9,7 +9,14 @@ describe('Book page', () => {
 
         BookingPage.bookAFlight();
 
+        // Verifies that the URL contains the departure place
+        expect(browser).toHaveUrlContaining("berlin"); 
+        // Verifies that the URL contains the arrival place
+        expect(browser).toHaveUrlContaining("london");
+
+        let currentUrl = browser.getUrl();
+        console.log(currentUrl); 
         // Validar que la URL tenga algo
-        // Validar que hayan vuelos disponibles
+        // Datos de login
     });
 }); 

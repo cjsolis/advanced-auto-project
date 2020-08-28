@@ -23,6 +23,7 @@
     "@wdio/mocha-framework": "^6.4.0",
     "@wdio/selenium-standalone-service": "^6.4.0",
     "@wdio/spec-reporter": "^6.4.0",
-    "@wdio/sync": "^6.4.0"
+    "@wdio/sync": "^6.4.0",
+    "chromedriver": "^85.0.0"
   }
 }

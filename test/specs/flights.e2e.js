@@ -7,14 +7,14 @@ describe('Flight page', () => {
 
         FlightPage.openFlightsWithPassengers();
         FlightPage.waitForResultsToLoad();
-        // Validar que hayan vuelos
+        expect(FlightPage.btnBook).toExist();
         
         FlightPage.selectTransportOnlyByName("Bus");
         FlightPage.waitForResultsToLoad();
-        // Validar que no hayan vuelos
+        expect(FlightPage.btnBook).not.toExist();
         
         FlightPage.selectTransportByName("Train");
         FlightPage.waitForResultsToLoad();
-        // Validar que hayan vuelos        
+        expect(FlightPage.btnBook).toExist();        
     });
 });
